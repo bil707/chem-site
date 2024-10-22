@@ -1,1 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChemPro - Хими 301</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css" rel="stylesheet"> <!-- Bootstrap Icons -->
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <!-- Menu button -->
+            <button class="menu-button">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <!-- Logo container -->
+            <div class="logo-container">
+                <img src="logo.png" alt="Site Logo" class="site-logo">
+                <span class="logo-text">ChemPro</span>
+            </div>
+
+            <!-- Search bar -->
+            <div class="search-bar">
+                <div class="search-input-container">
+                    <button class="search-icon">
+                        <i class="bi bi-search"></i>
+                    </button>
+                    <input type="text" placeholder="Хайх" class="search-input">
+                </div>
+            </div>
+
+            <!-- User options -->
+            <div class="user-options">
+                <button class="notification-btn">
+                    <i class="bi bi-bell"></i>
+                </button>
+                <div class="user-info">
+                    <i class="bi bi-person-circle"></i>
+                    <span class="username">Lily</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <h3>Бүлэг 1: Бодисын төлөв</h3>
+            <ul>
+                <li><a href="#">Бүлэг 2: Атомын бүтэц</a></li>
+                <li><a href="#" class="active">Бүлэг 3: Органик бодисын бүтэц</a></li>
+                <li><a href="#">Бүлэг 4: Органик хими</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="head-container"> <!-- Updated class name -->
+                <div>
+                    <p>Бүлэг 3 Хими 301</p>
+                    <h1 class="title">Органик бодисын бүтэц</h1>
+                </div><br>
+                <img src="chemistry.png" alt="Chemistry image">
+            </div>
+
+            <div class="lesson-info">
+                <p>Нүүрстөрөгч нь өөртэйгөө болон бусад элементүүдтэй ковалент холбоо үүсгэж, гайхалтай бүтцийг бий болгож чадна. Органик химийн чиглэлээр бид нүүрстөрөгчийн галзуу бүтцийг нийлэгжүүлэхэд химичүүдийн ашигладаг урвал, мөн тэдгээрийг тодорхойлох аналитик аргуудын талаар суралцах болно. Бид мөн эдгээр урвалууд молекулын түвшинд урвалын механизмтай хэрхэн явагдаж байгаа талаар бодох болно. Энгийнээр хэлбэл, органик хими нь молекул Legos-той адил юм. Сайхан органик молекулуудыг бүтээцгээе!</p>
+            </div>
+
+            <div class="lesson-content">
+                <h4>Хичээлийн бүтэц</h4><br>
+                <ul id="lesson-list">
+                    <li>
+                        <span class="lesson-text">1. Органик бодис гэж юу вэ?</span>
+                        <span class="lesson-time">00:10 минут</span>
+                    </li>
+                    <li>
+                        <span class="lesson-text">2. Органик бодисын шинж чанар</span>
+                        <span class="lesson-time">01:15 минут</span>
+                    </li>
+                    <li>
+                        <span class="lesson-text">3. Органик бодисын бүтэц</span>
+                        <span class="lesson-time">02:46 минут</span>
+                    </li>
+                    <li>
+                        <span class="lesson-text">4. Туршилт</span>
+                        <span class="lesson-time">05:23 минут</span>
+                    </li>
+                </ul>
+                
+            </div>
+
+                <div class="stats" id="section1">
+                    <p>Дундаж үнэлгээ</p>
+                    <strong>1263</strong>
+                </div>
+                <div class="stats" id="section2">
+                    <p>Узүүлэлт</p>
+                    <strong>9 минут</strong>
+                </div>
+                <div class="stats" id="section3">
+                    <p>Хугацааны хэмжээ</p>
+                    <strong>6 минут</strong>
+                </div>
+            </div>
+        </div>
+
+        <div style="clear: both;"></div>
+
+    <div class="container">
+        <!-- Хичээлийн хавсралт хэсэг -->
+        <section class="attachments">
+            <h2>Хичээлийн хавсралт</h2>
+            <div class="carousel">
+                <button class="arrow-left">‹</button>
+                <div class="books">
+                    <div class="book">
+                        <img src="book1.png" alt="Хими ном">
+                    </div>
+                    <div class="book">
+                        <img src="book2.jpg" alt="Хими тулгуур лавлах">
+                    </div>
+                    <div class="book">
+                        <img src="book3.jpg" alt="Хялбар Хими">
+                    </div>
+                </div>
+                <button class="arrow-right">›</button>
+            </div>
+        </section>
+
+        <!-- Туршилтад шаардлагатай материалууд -->
+        <section class="materials-section">
+            <h2>Туршилтад шаардлагатай материалууд</h2>
+            <div class="materials">
+                <div class="material">
+                    <img src="vinegar.png" alt="Цуу">
+                    <p>Цуу</p>
+                </div>
+                <div class="material">
+                    <img src="disinfectant.png" alt="Урэх бодис">
+                    <p>Урэх бодис</p>
+                </div>
+                <div class="material">
+                    <img src="soda.png" alt="Сода">
+                    <p>Сода</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comments section -->
+        <section class="comments-section">
+            <h2>Comments</h2>
+            <textarea placeholder="Сэтгэгдэл үлдээгээрэй"></textarea>
+            <button class="submit-btn">Нийтлэх</button>
+            <div class="comments">
+                <div class="comment">
+                    <p><strong>Жаргалмаа</strong> 2 цагийн өмнө</p>
+                    <p>Энэ хичээл үнэхээр сонирхолтой хичээл байлаа &lt;3</p>
+                    <p class="rating">★★★★★</p>
+                </div>
+                <div class="comment">
+                    <p><strong>Саруул</strong> 1 өдрийн өмнө</p>
+                    <p>Тэнэг хүн ч ойлгохоор амархан тайлбарлажээ. Мундаг хамт олон шүү баярлалаа.</p>
+                    <p class="rating">★★★★★</p>
+                </div>
+                <div class="comment">
+                    <p><strong>Саруул</strong> 1 өдрийн өмнө</p>
+                    <p>Мэдлэгийг түгээх чин хүсэл зориг нь ганцхан хичээл үзэхэд л мэдэгддэг шүү.</p>
+                    <p class="rating">★★★★★</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>Copyright 2024</p>
+            <nav>
+                <a href="#">Аюулгүй байдлын бодлого</a>
+                <a href="#">Дүрэм журам</a>
+                <a href="#">Холбогдох мэдээлэл</a>
+            </nav>
+        </div>
+    </footer>
+    <script src="script.js"></script> <!-- Link to external JavaScript -->
+</body>
+</html>
 
