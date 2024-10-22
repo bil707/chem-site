@@ -1,0 +1,227 @@
+/* Define CSS Variables */
+:root {
+    /* Colors */
+    --primary-color: #45a049;
+    --secondary-color: #45a049;
+    --background-color: #f9f9f9;
+    --text-color: #0e0e0e;
+    --title-color: #00796b;
+    --segment-bg-color: #fff;
+    --segment-title-color: var(--primary-color);
+    --footer-bg-color: var(--primary-color);
+    --footer-text-color: white;
+
+    /* Sizes */
+    --nav-padding: 1rem;
+    --title-font-size: 3rem;
+    --title-margin-top: 100px;
+    --segment-padding: 20px;
+    --segment-margin: 50px;
+    --segment-width: 80%;
+    --text-font-size: 1rem;
+    --small-text-font-size: 1.2rem;
+    --medium-text-font-size: 2rem;
+    --image-max-width: 150px;
+    --responsive-title-font-size: 2.5rem;
+}
+
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+}
+
+header {
+    background-color: #353535;
+    padding: 10px 20px;
+    color: white;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 20px;
+    display: flex;
+    align-items: center; /* Center icon vertically */
+}
+  
+  /* Logo container between menu and search */
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;  /* Space around logo */
+}
+  
+.site-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+  
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+  
+.search-bar {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+  
+.search-input-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+  
+.search-icon {
+    background: none;
+    border: none;
+    color: #aaa;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+  
+.search-input {
+    width: 100%;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: var(--primary-color);
+    padding: var(--nav-padding);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+}
+
+/* Main Title Section */
+.main-title {
+    margin-top: var(--title-margin-top);
+    padding: 100px 20px;
+    background-color: #e0f7fa;
+    color: var(--title-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-title h1 {
+    font-size: var(--title-font-size);
+    font-weight: bold;
+    margin: 0;
+    text-align: left;
+}
+
+.main-title img {
+    max-width: var(--image-max-width);
+    height: auto;
+}
+
+/* Info Segments */
+.info-segment {
+    margin: var(--segment-margin) 0;
+    padding: var(--segment-padding);
+    background-color: var(--background-color);
+    width: var(--segment-width);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    box-shadow: none;
+}
+
+.info-segment h2 {
+    font-size: var(--medium-text-font-size);
+    color: var(--segment-title-color);
+}
+
+.info-segment p {
+    font-size: var(--text-font-size);
+    color: #555;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: var(--text-font-size);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .main-title {
+        flex-direction: column;
+    }
+
+    .main-title h1 {
+        font-size: var(--responsive-title-font-size);
+        text-align: center;
+    }
+
+    .main-title img {
+        margin-top: 20px;
+    }
+
+    .info-segment {
+        width: 95%;
+    }
+}
