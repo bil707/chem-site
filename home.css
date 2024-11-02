@@ -1,0 +1,460 @@
+/*propeties*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+header{
+    width: 100%;
+    padding: 10px 10%;
+    justify-content: space-between;
+}
+#sponsors {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#sponsors h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.sponsor-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10%; /* Space between sponsor logos */
+}
+
+.sponsor-list li {
+    flex: 1 1 calc(25% - 40px); /* 4 logos per row */
+    max-width: 150px; /* Limit logo size */
+}
+
+.sponsor-list li img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    padding: 10px;
+    transition: transform 0.3s;
+}
+
+.sponsor-list li img:hover {
+    transform: scale(1.1);
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px 10%;
+    overflow: hidden;
+    position: relative;
+    background-image: url('images/background.png'); /* Add your background image here */
+    background-size: cover; /* Ensures the image covers the entire hero section */
+    background-position: center; /* Centers the image in the hero section */
+    background-repeat: no-repeat; /* Prevents the background from repeating */
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.logo{
+    width: 140px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 10px 15px;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 400px;;
+}
+.login-btn{
+    color: #333;
+    text-decoration: none;
+    font-weight: 400;
+    margin-right: 15px;
+}
+.btn{
+    display: inline-block;
+    padding: 14px 40px;
+    text-decoration: none;
+    background-image:linear-gradient(90deg, #df4881, #c430d7);
+    color: #fff;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.content{
+    margin-top: 20%;
+    max-width: 700px;
+}
+.content h1{
+    font-size: 70px;
+    color: #222;
+}
+.content p{
+    font-size: 20px; 
+    color: #333;
+    margin: 50px 0 30px;
+    animation-delay: 0.5s;
+}
+.content .btn{
+    padding: 15px 80px;
+    font-size: 16px;
+    margin-top: 20px;
+    animation-delay: 1s;
+}
+.btn:hover{
+    background-image:linear-gradient(45deg, #fc7979, #d76d30);
+    color: #333;
+}
+.feature-img{
+    width: 700px;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+}
+.feature-img.anim{
+    animation-delay: 1.5s;
+}
+.anim{
+    opacity: 0;
+    transform: translateY(80px);
+    animation: moveup 0.5s  linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+#most-rated-lessons {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+#most-rated-lessons h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.lesson-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    gap: 20px; /* Space between lessons */
+}
+
+.lesson-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    max-width: 300px;
+    text-align: left;
+}
+
+.lesson-item:hover {
+    transform: scale(1.05);
+}
+
+.lesson-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.lesson-item h3 {
+    font-size: 1.5em;
+    margin: 15px 0 10px;
+    color: #222;
+}
+
+.lesson-item p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.rating {
+    font-size: 1.2em;
+    color: #ffcc00; /* Yellow stars */
+}
+
+.rating span {
+    color: #ffcc00;
+}
+#stats {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+#stats h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between the items */
+}
+
+.stat-item {
+    background-color: #f2f2f2;
+    padding: 20px 40px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.stat-number {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    font-size: 1em;
+    color: #666;
+}
+/* Teacher Profile Section */
+#teacher-info {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
+}
+
+#teacher-info h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.teacher-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.teacher-photo {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid #e5e5e5;
+}
+
+.teacher-details {
+    text-align: left;
+    max-width: 500px;
+}
+
+.teacher-details h3 {
+    font-size: 1.5em;
+    color: #df4881;
+}
+
+.teacher-details p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.teacher-details h4 {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.teacher-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.teacher-details ul li {
+    margin-bottom: 10px;
+}
+
+.prev-btn, .next-btn {
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    color: #df4881;
+}
+
+/* Testimonials Section */
+.testimonials {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.testimonial {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.student-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.testimonial p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+    .teacher-profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonials {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial {
+        margin-bottom: 20px;
+    }
+}
+#faq {
+    background-color: #d1f455; /* Background color */
+    padding: 2em;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.faq-item {
+    margin-bottom: 1em;
+    border-bottom: 1px solid black;
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 1em;
+    text-align: left;
+    font-size: 1.2em;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.faq-answer {
+    display: none;
+    padding: 1em;
+    font-size: 1em;
+}
+
+.faq-question::after {
+    content: "\25BC"; /* Unicode for down arrow */
+    float: right;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .faq-question::after {
+    content: "\25B2"; /* Unicode for up arrow */
+}
+footer {
+    background-color: #333; /* Dark background for the footer */
+    color: #fff; /* White text color */
+    padding: 20px 0; /* Padding on the top and bottom */
+    text-align: center; /* Center align the text */
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the footer content */
+    padding: 0 20px;
+}
+
+footer .footer-content img.logo {
+    height: 50px; /* Adjust the size of the logo */
+    margin-right: 20px; /* Space between the logo and the list */
+}
+
+footer ul {
+    list-style-type: none; /* Remove bullet points from the list */
+    display: flex; /* Display the list items in a row */
+    gap: 20px; /* Add space between the list items */
+}
+
+footer ul li {
+    margin: 0 10px; /* Add space around each list item */
+}
+
+footer ul li a {
+    color: #fff; /* White color for the links */
+    text-decoration: none; /* Remove underline from the links */
+    font-size: 16px; /* Set font size for the links */
+}
+
+footer ul li a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+@media (max-width: 768px) {
+    footer .footer-content {
+        flex-direction: column; /* Stack content on smaller screens */
+    }
+
+    footer ul {
+        flex-direction: column; /* Stack the list items vertically */
+        gap: 10px; /* Reduce gap between list items */
+    }
+
+    footer .footer-content img.logo {
+        margin-bottom: 20px; /* Add space below the logo */
+    }
+}
+
